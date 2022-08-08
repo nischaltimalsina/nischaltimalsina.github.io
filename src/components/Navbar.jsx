@@ -32,7 +32,7 @@ const Navbar = () => {
         </ul></div>
       <div className="flex items-end lg:hidden " >
 
-      <ul className={`  ${toggle?"":"translate-x-[300%]"} absolute  flex flex-col h-screen w-64  right-0 top-0 px-14 py-32 bg-white/10 gap-8  font-extralight ease-in-out duration-300 `}>
+      <ul className={`  ${toggle?"":"translate-x-[300%]"} absolute  flex flex-col h-screen w-64  right-0 top-0 px-14 py-32 bg-zinc-700 gap-8  font-extralight ease-in-out duration-300 `}>
       <li>
             <NavLink to={"/"} onClick={()=>setToggle(prevToggle=>!prevToggle)}>Home</NavLink>
           </li>
