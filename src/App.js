@@ -6,15 +6,18 @@ import Homepage from './pages/Homepage';
 import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Gallery from './pages/Gallery';
+import NotFound from './pages/404NotFound';
 function App() {
   return (
     <Routes>
       <Route element={<PublicRoutes />}>
         <Route exact path="/" element={<Homepage/>}/>
-        <Route exact path="/about" element={<About/>}/>
-        <Route exact path="/contact" element={<Contact/>}/>
-        <Route exact path="/portfolio" element={<Portfolio/>}/>
-        <Route exact path="/gallery" element={<Gallery/>}/>
+        <Route  path="/about" element={<About/>}/>
+        <Route  path="/contact" element={<Contact/>}/>
+        <Route  path="/portfolio" element={<Portfolio/>}/>
+        <Route  path="/gallery" element={<Gallery/>}/>
+        <Route  path="*" element={<NotFound/>}/>
+
       </Route>
       <Route element={<ProtectedRoutes />}>
       </Route>

@@ -1,7 +1,27 @@
 @tailwind base;
 @tailwind components;
-html{
-    @apply bg-zinc-800 text-gray-200 max-w-[1440px] mx-auto font-["Poppins"]
+html {
+  @apply bg-zinc-800 text-gray-200  mx-auto font-["Poppins"]  scroll-smooth;
 }
-
+.dropdown{
+ @apply relative;
+}
+.dropdown-item{
+  @apply invisible absolute
+}
+.dropdown:hover .dropdown-item{
+ @apply visible 
+}
+.dropdown:focus .dropdown-item{
+  @apply visible
+ }
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
 @tailwind utilities;

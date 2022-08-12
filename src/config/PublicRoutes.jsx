@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 const PublicRoutes = () => {
   return (
     <>
-      <div className="w-full h-[100vh] overflow-hidden">
+      <div className="relative h-screen overflow-x-hidden no-scrollbar ">
       <Navbar />
       <Outlet />
       <Footer />
